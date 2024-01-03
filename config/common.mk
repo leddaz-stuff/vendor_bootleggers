@@ -228,5 +228,70 @@ include vendor/bootleggers/config/btlg_main.mk
 PRODUCT_PACKAGES += \
     NavigationBarModeGesturalOverlayFS
 
+# Artifact path requirements
+PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
+    system/addon.d/50-bootleggers.sh \
+    system/app/MiXplorerPrebuilt/MiXplorerPrebuilt.apk \
+    system/app/NfcNci/NfcNci.apk \
+    system/app/NfcNci/lib/arm64/libnfc_nci_jni.so \
+    system/app/NoCutoutOverlay/NoCutoutOverlay.apk \
+    system/app/NotallyPrebuilt/NotallyPrebuilt.apk \
+    system/app/PrebuiltAuxioOverlay/PrebuiltAuxioOverlay.apk \
+    system/app/QPGallery/QPGallery.apk \
+    system/app/StitchImage-res/StitchImage-res.apk \
+    system/app/StitchImage-sceditor/StitchImage-sceditor.apk \
+    system/bin/backuptool_ab.functions \
+    system/bin/backuptool_ab.sh \
+    system/bin/backuptool_postinstall.sh \
+    system/bin/curl \
+    system/etc/default-permissions/com.android.providers.weather.xml \
+    system/etc/default-permissions/default_permissions_co.aospa.sense.xml \
+    system/etc/init/bootleggers-adb.rc \
+    system/etc/init/bootleggers-init.rc \
+    system/etc/init/bootleggers-iosched.rc \
+    system/etc/init/bootleggers-livedisplay.rc \
+    system/etc/init/bootleggers-radio.rc \
+    system/etc/init/bootleggers-ssh.rc \
+    system/etc/init/bootleggers-system.rc \
+    system/etc/init/bootleggers-tcp.rc \
+    system/etc/libnfc-nci.conf \
+    system/etc/permissions/android.hardware.biometrics.face.xml \
+    system/etc/permissions/android.software.sip.voip.xml \
+    system/etc/permissions/bootleggers-hiddenapi-package-whitelist.xml \
+    system/etc/permissions/com.android.providers.weather.xml \
+    system/etc/permissions/org.lineageos.livedisplay.xml \
+    system/etc/permissions/privapp-permissions-bootleg.xml \
+    system/etc/permissions/privapp-permissions-recorder.xml \
+    system/etc/permissions/privapp_whitelist_co.aospa.sense.xml \
+    system/etc/sensitive_pn.xml \
+    system/etc/sysconfig/backup.xml \
+    system/etc/sysconfig/bootleg-power-whitelist.xml \
+    system/etc/sysconfig/bootleg-sysconfig.xml \
+    system/etc/sysconfig/hiddenapi-whitelist-co.aospa.sense.xml \
+    system/lib/content-types.properties \
+    system/lib/libRSSupport.so \
+    system/lib/libblasV8.so \
+    system/lib/librsjni.so \
+    system/lib/libsepol.so \
+    system/lib64/android.hardware.nfc-V1-ndk.so \
+    system/lib64/android.hardware.nfc@1.0.so \
+    system/lib64/android.hardware.nfc@1.1.so \
+    system/lib64/android.hardware.nfc@1.2.so \
+    system/lib64/libFaceDetectCA.so \
+    system/lib64/libMegviiUnlock-jni-1.2.so \
+    system/lib64/libMegviiUnlock.so \
+    system/lib64/libRSSupport.so \
+    system/lib64/libblasV8.so \
+    system/lib64/libmegface.so \
+    system/lib64/libnfc-nci.so \
+    system/lib64/libnfc_nci_jni.so \
+    system/lib64/librsjni.so \
+    system/lib64/libsepol.so \
+    system/lib64/libstatslog_nfc.so \
+    system/priv-app/ParanoidSense/ParanoidSense.apk \
+    system/priv-app/StitchImage/StitchImage.apk \
+    system/usr/keylayout/Vendor_045e_Product_0719.kl \
+    system/xbin/wget
+
 # Certification
 -include vendor/certification/config.mk
